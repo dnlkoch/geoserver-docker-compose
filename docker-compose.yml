@@ -22,7 +22,7 @@ services:
       - ./ldap/ldap_data:/var/lib/ldap:Z
       - ./ldap/ldap_config:/etc/ldap/slapd.d:Z
   geoserver:
-    image: terrestris/geoserver:2.18.1
+    image: terrestris/geoserver:2.18.2
     ports:
       - 8080:8080
     environment:
