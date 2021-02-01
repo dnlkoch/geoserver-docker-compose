@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  postgis:
+    image: postgis/postgis:13-3.1-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./postgis/postgresql_data:/var/lib/postgresql/data:Z
+      - ./postgis/init_data/01_init_db.sql:/docker-entrypoint-initdb.d/01_init_db.sql
+  ldap:
+    image: osixia/openldap:1.4.0
+    ports:
+      - 389:389
+    environment:
+      - LDAP_ORGANISATION="MyCompany Inc."
+      - LDAP_DOMAIN=mycompany.com
+    volumes:
+      - ./ldap/ldap_data:/var/lib/ldap:Z
+      - ./ldap/slapd.d:/etc/ldap/slapd.d:Z
+      - ./ldap/container:/container/service/slapd/assets/certs/:Z
+  geoserver:
+    image: terrestris/geoserver:2.18.1
+    ports:
+      - 8080:8080
+    environment:
+      EXTRA_JAVA_OPTS: -Xms1g -Xmx2g
+    volumes:
+      - ./geoserver/geoserver_data:/opt/geoserver_data/:Z
+      - ./geoserver/additional_libs:/opt/additional_libs/:Z
+    depends_on:
+      - postgis

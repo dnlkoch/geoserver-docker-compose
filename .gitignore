@@ -1,0 +1,10 @@
+ldap/ldap_data
+ldap/container
+ldap/slapd.d
+postgis/postgresql_data
+
+geoserver/geoserver_data/logs/*.log
+
+*iml
+.idea
+.vscode
