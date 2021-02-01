@@ -20,8 +20,7 @@ services:
       LDAP_ADMIN_PASSWORD: admin
     volumes:
       - ./ldap/ldap_data:/var/lib/ldap:Z
-      - ./ldap/slapd.d:/etc/ldap/slapd.d:Z
-      - ./ldap/container:/container/service/slapd/assets/certs/:Z
+      - ./ldap/ldap_config:/etc/ldap/slapd.d:Z
   geoserver:
     image: terrestris/geoserver:2.18.1
     ports:
