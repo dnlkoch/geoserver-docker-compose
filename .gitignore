@@ -1,6 +1,5 @@
 ldap/ldap_data
-ldap/container
-ldap/slapd.d
+ldap/ldap_config
 postgis/postgresql_data
 
 geoserver/geoserver_data/logs/*.log

@@ -1,0 +1,79 @@
+version: 1
+
+dn: ou=groups,dc=mycompany,dc=com
+objectclass: organizationalUnit
+objectclass: top
+ou: groups
+
+dn: cn=admin,ou=groups,dc=mycompany,dc=com
+cn: admin
+gidnumber: 501
+memberuid: 1003
+objectclass: posixGroup
+objectclass: top
+
+dn: cn=developers,ou=groups,dc=mycompany,dc=com
+cn: developers
+gidnumber: 500
+memberuid: 1000
+memberuid: 1001
+memberuid: 1002
+objectclass: posixGroup
+objectclass: top
+
+dn: ou=users,dc=mycompany,dc=com
+objectclass: organizationalUnit
+objectclass: top
+ou: users
+
+dn: cn=Bill Gates,ou=users,dc=mycompany,dc=com
+cn: Bill Gates
+gidnumber: 500
+givenname: bill
+homedirectory: /home/users/bgates
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: gates
+uid: bgates
+uidnumber: 1000
+userpassword: {MD5}ICy5YqxZB1uWSwcVLSNLcA==
+
+dn: cn=Ivan Franchin,ou=users,dc=mycompany,dc=com
+cn: Ivan Franchin
+gidnumber: 501
+givenname: Ivan
+homedirectory: /home/users/ifranchin
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Franchin
+uid: ifranchin
+uidnumber: 1003
+userpassword: {MD5}ICy5YqxZB1uWSwcVLSNLcA==
+
+dn: cn=Mark Cuban,ou=users,dc=mycompany,dc=com
+cn: Mark Cuban
+gidnumber: 500
+givenname: Mark
+homedirectory: /home/users/mcuban
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Cuban
+uid: mcuban
+uidnumber: 1002
+userpassword: {MD5}ICy5YqxZB1uWSwcVLSNLcA==
+
+dn: cn=Steve Jobs,ou=users,dc=mycompany,dc=com
+cn: Steve Jobs
+gidnumber: 500
+givenname: Steve
+homedirectory: /home/users/sjobs
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Jobs
+uid: sjobs
+uidnumber: 1001
+userpassword: {MD5}ICy5YqxZB1uWSwcVLSNLcA==
