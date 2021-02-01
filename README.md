@@ -13,6 +13,12 @@ A simple docker-compose setup for GeoServer and some related services.
 docker-compose -p geoserver up
 ```
 
+### Very first startup
+
+* Import LDAP dummy data (groups and users):
+
+`./ldap/init_data/import-users.sh`
+
 ## Available services
 
 ### PostgreSQL
@@ -25,7 +31,7 @@ docker-compose -p geoserver up
 
 * Internal connection: `ldap:389`
 * Exposed connection: `localhost:389`
-* Credentials: `TODO:TODO`
+* Credentials: `admin:admin`
 
 ### GeoServer
 
