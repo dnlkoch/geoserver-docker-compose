@@ -7,18 +7,16 @@ ou: groups
 
 dn: cn=admin,ou=groups,dc=mycompany,dc=com
 cn: admin
-gidnumber: 501
-memberuid: 1003
-objectclass: posixGroup
-objectclass: top
+objectClass: top
+objectClass: groupOfNames
+member: cn=astark,ou=users
 
 dn: cn=developers,ou=groups,dc=mycompany,dc=com
 cn: developers
-gidnumber: 500
-memberuid: 1000
-memberuid: 1001
-memberuid: 1002
-objectclass: posixGroup
+member: cn=jsnow,ou=users
+member: cn=starly,ou=users
+member: cn=jlannister,ou=users
+objectClass: groupOfNames
 objectclass: top
 
 dn: ou=users,dc=mycompany,dc=com
@@ -26,54 +24,54 @@ objectclass: organizationalUnit
 objectclass: top
 ou: users
 
-dn: cn=Bill Gates,ou=users,dc=mycompany,dc=com
-cn: Bill Gates
+dn: cn=jsnow,ou=users,dc=mycompany,dc=com
+cn: jsnow
 gidnumber: 500
-givenname: bill
-homedirectory: /home/users/bgates
+givenname: Jon
+homedirectory: /home/users/jsnow
 objectclass: inetOrgPerson
 objectclass: posixAccount
 objectclass: top
-sn: gates
-uid: bgates
+sn: Snow
+uid: jsnow
 uidnumber: 1000
-userpassword: {MD5}ICy5YqxZB1uWSwcVLSNLcA==
+userpassword: {SSHA}fUISxKlcWNd+4ug1au4YM398X5EKeFYGvSgKVQ==
 
-dn: cn=Ivan Franchin,ou=users,dc=mycompany,dc=com
-cn: Ivan Franchin
+dn: cn=astark,ou=users,dc=mycompany,dc=com
+cn: astark
 gidnumber: 501
-givenname: Ivan
-homedirectory: /home/users/ifranchin
+givenname: Arya
+homedirectory: /home/users/astark
 objectclass: inetOrgPerson
 objectclass: posixAccount
 objectclass: top
-sn: Franchin
-uid: ifranchin
+sn: Stark
+uid: astark
 uidnumber: 1003
-userpassword: {MD5}ICy5YqxZB1uWSwcVLSNLcA==
+userpassword: {SSHA}1WtkDROekkRzXW30czPshirgzZXQ01V6g2CS+A==
 
-dn: cn=Mark Cuban,ou=users,dc=mycompany,dc=com
-cn: Mark Cuban
+dn: cn=jlannister,ou=users,dc=mycompany,dc=com
+cn: jlannister
 gidnumber: 500
-givenname: Mark
-homedirectory: /home/users/mcuban
+givenname: Jaime
+homedirectory: /home/users/jlannister
 objectclass: inetOrgPerson
 objectclass: posixAccount
 objectclass: top
-sn: Cuban
-uid: mcuban
+sn: Lannister
+uid: jlannister
 uidnumber: 1002
-userpassword: {MD5}ICy5YqxZB1uWSwcVLSNLcA==
+userpassword: {SSHA}4/f92PKbVKqXO/Z5tlm2WjyE6M6PDkjJAW5ATw==
 
-dn: cn=Steve Jobs,ou=users,dc=mycompany,dc=com
-cn: Steve Jobs
+dn: cn=starly,ou=users,dc=mycompany,dc=com
+cn: starly
 gidnumber: 500
-givenname: Steve
-homedirectory: /home/users/sjobs
+givenname: Samwell
+homedirectory: /home/users/starly
 objectclass: inetOrgPerson
 objectclass: posixAccount
 objectclass: top
-sn: Jobs
+sn: Tarly
 uid: sjobs
 uidnumber: 1001
-userpassword: {MD5}ICy5YqxZB1uWSwcVLSNLcA==
+userpassword: {SSHA}nxiHOBG7WvRYqRSxDfCyT4C+j2V5LPOxiyRQrQ==
