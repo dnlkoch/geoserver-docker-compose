@@ -5,6 +5,8 @@ postgis/postgresql_data
 geoserver/geoserver_data/logs/*.log
 geoserver/geoserver_data/logs/*.log.*
 
+geoserver/geoserver_data/logs/monitor/
+
 *iml
 .idea
 .vscode
