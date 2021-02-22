@@ -24,8 +24,8 @@
       </map>
     </metadata>
     <localWorkspaceIncludesPrefix>false</localWorkspaceIncludesPrefix>
-    <showCreatedTimeColumnsInAdminList>false</showCreatedTimeColumnsInAdminList>
-    <showModifiedTimeColumnsInAdminList>false</showModifiedTimeColumnsInAdminList>
+    <showCreatedTimeColumnsInAdminList>true</showCreatedTimeColumnsInAdminList>
+    <showModifiedTimeColumnsInAdminList>true</showModifiedTimeColumnsInAdminList>
   </settings>
   <jai>
     <allowInterpolation>false</allowInterpolation>
@@ -74,7 +74,7 @@
     <queueType>UNBOUNDED</queueType>
     <imageIOCacheThreshold>10240</imageIOCacheThreshold>
   </coverageAccess>
-  <updateSequence>3</updateSequence>
+  <updateSequence>41</updateSequence>
   <featureTypeCacheSize>0</featureTypeCacheSize>
   <globalServices>true</globalServices>
   <useHeadersProxyURL>false</useHeadersProxyURL>
