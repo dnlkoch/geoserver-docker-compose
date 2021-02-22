@@ -3,6 +3,7 @@ ldap/ldap_config
 postgis/postgresql_data
 
 geoserver/geoserver_data/logs/*.log
+geoserver/geoserver_data/logs/*.log.*
 
 *iml
 .idea
