@@ -1,0 +1,21 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--449422a5:177636113e2:-7ff8</id>
+  <name>GEOTIFF</name>
+  <type>GeoTIFF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-54e564e:1775ea9b0dd:-7ffc</id>
+  </workspace>
+  <metadata>
+    <entry key="CogSettings.Key">
+      <cogSettings>
+        <useCachingStream>false</useCachingStream>
+        <rangeReaderSettings>HTTP</rangeReaderSettings>
+      </cogSettings>
+    </entry>
+  </metadata>
+  <__default>false</__default>
+  <dateCreated>2021-02-03 12:43:29.892 UTC</dateCreated>
+  <dateModified>2021-02-22 09:59:17.272 UTC</dateModified>
+  <url>cog://https://data.mundialis.de/geodata/lulc-germany/classification_2019/classification_map_germany_2019_v0_1.tif</url>
+</coverageStore>

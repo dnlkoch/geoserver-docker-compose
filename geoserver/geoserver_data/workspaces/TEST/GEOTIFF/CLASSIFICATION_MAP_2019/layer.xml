@@ -1,0 +1,17 @@
+<layer>
+  <name>CLASSIFICATION_MAP_2019</name>
+  <id>LayerInfoImpl--449422a5:177636113e2:-7ff6</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--20d0c348:1775ce40163:-7ffd</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--449422a5:177636113e2:-7ff7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2021-02-03 12:43:59.336 UTC</dateCreated>
+  <dateModified>2021-02-22 10:00:19.607 UTC</dateModified>
+</layer>
